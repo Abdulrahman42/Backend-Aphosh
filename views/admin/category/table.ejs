@@ -1,0 +1,37 @@
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header card-header-primary">
+            <button type="button" data-toggle="modal" data-target="#addModal" class="btn btn-danger btn-sm mb-2"><i
+                    class="material-icons">add</i></button>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class=" text-primary">
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody>
+                        <% for(let i =0; i < category.length; i++){%>
+                        <tr>
+                            <td><%= i+1 %></td>
+                            <td><%= category[i].name %></td>
+                            <td>
+                                <form action="/admin/category/<%= category[i].id%>?_method=DELETE" method="POST">
+                                    <a href="javascript:void();" data-id="<%= category[i].id%>"
+                                        data-name="<%= category[i].name %>" type="button"
+                                        class="btn btn-warning btn-round">
+                                        <i class="material-icons">edit</i></a>
+                                    <button class="btn btn-danger btn-round" type="submit">
+                                        <i class="material-icons">delete</i></button>
+                                </form>
+                            </td>
+                        </tr>
+                        <%}%>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

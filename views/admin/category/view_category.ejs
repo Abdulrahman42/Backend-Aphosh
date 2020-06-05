@@ -1,0 +1,35 @@
+<%- include('../../partials/header.ejs')%>
+<div class="wrapper ">
+    <%- include('../../partials/sidebar.ejs')%>
+    <div class="main-panel">
+        <!-- Navbar -->
+        <%- include('../../partials/navbar.ejs')%>
+        <!-- End Navbar -->
+        <div class="content">
+            <div class="container-fluid">
+                <%- include('../../partials/message.ejs')%>
+
+                <%- include('table.ejs')%>
+            </div>
+        </div>
+        <%- include('add_modal.ejs')%>
+        <%- include('edit_modal.ejs')%>
+
+        <%- include('../../partials/footer.ejs')%>
+    </div>
+</div>
+<%- include('../../partials/setting.ejs')%>
+
+<!--   Core JS Files   -->
+<%- include('../../partials/js.ejs')%>
+
+
+<script>
+    $('.table').on('click', '.button-update', function () {
+        let id = $(this).data('id')
+        let name = $(this).data('name')
+        $('#editModal').modal('show');
+        $('.id').val(id);
+        $('.name').val(name);
+    })
+</script>

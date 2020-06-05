@@ -1,0 +1,9 @@
+<% if(alert.message != '') {%>
+<div class="alert alert-<%= alert.status%>">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="material-icons">close</i>
+    </button>
+    <span>
+        <%= alert.message %></span>
+</div>
+<%}%>
