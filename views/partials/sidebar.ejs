@@ -1,119 +1,75 @@
-<!-- <div class="app-sidebar sidebar-shadow">
-    <div class="app-header__logo">
-        <div class="logo-src"></div>
-        <div class="header__pane ml-auto">
-            <div>
-                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
-                    data-class="closed-sidebar">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="app-header__mobile-menu">
-        <div>
-            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-    </div>
-    <div class="app-header__menu">
-        <span>
-            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
-                <span class="btn-icon-wrapper">
-                    <i class="fa fa-ellipsis-v fa-w-6"></i>
-                </span>
-            </button>
-        </span>
-    </div>
-    <div class="scrollbar-sidebar">
-        <div class="app-sidebar__inner">
-            <ul class="vertical-nav-menu">
-                <li class="app-sidebar__heading">Dashboards</li>
-                <li>
-                    <a href="/admin/dashboard" class="mm-active">
-                        <i class="metismenu-icon pe-7s-rocket"></i>
-                        Dashboard Example 1
-                    </a>
-                </li>
-                <li class="app-sidebar__heading">Master</li>
-                <li>
-                    <a href="/admin/category">
-                        <i class="metismenu-icon pe-7s-display2"></i>
-                        Category
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/bank">
-                        <i class="metismenu-icon pe-7s-display2"></i>
-                        Bank
-                    </a>
-                </li>
-                <li>
-                    <a href="/admin/item">
-                        <i class="metismenu-icon pe-7s-display2"></i>
-                        Item
-                    </a>
-                </li>
-                <li class="app-sidebar__heading">Order</li>
-                <li>
-                    <a href="/admin/booking">
-                        <i class="metismenu-icon pe-7s-display2"></i>
-                        Booking
-                    </a>
-                </li>
-             
-            </ul>
-        </div>
-    </div>
-</div> -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-<div class="sidebar" data-color="purple" data-background-color="white"
-    data-image="/material-dashboard/assets/img/sidebar-1.jpg">
-    <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Aphosh</div>
+    </a>
 
-      Tip 2: you can also add an image using data-image tag
-  -->
-    <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-            Aphosh
-        </a></div>
-    <div class="sidebar-wrapper">
-        <ul class="nav">
-            <li class="nav-item active  ">
-                <a class="nav-link" href="/">
-                    <i class="material-icons">dashboard</i>
-                    <p>Dashboard</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="/admin/category">
-                    <i class="material-icons">person</i>
-                    <p>Category</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="/admin/bank">
-                    <i class="material-icons">content_paste</i>
-                    <p>Bank</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="/admin/item">
-                    <i class="material-icons">library_books</i>
-                    <p>Item</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="/admin/booking">
-                    <i class="material-icons">bubble_chart</i>
-                    <p>Booking</p>
-                </a>
-            </li>
-        </ul>
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item">
+        <a class="nav-link" href="/">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Interface
     </div>
-</div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link" href="/admin/bank">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Bank</span>
+        </a>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link" href="/admin/category">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Category</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/admin/item">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Item</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Addons
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link" href="/admin/booking">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Booking</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
