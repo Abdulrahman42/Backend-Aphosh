@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { ObjectId } = mongoose.Schema
 
 const featuredSchema = new mongoose.Schema({
   name: {
@@ -13,6 +14,10 @@ const featuredSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  itemId: {
+    type: ObjectId,
+    ref: 'item'
+  }
 });
 
 module.exports = mongoose.model("Featured", featuredSchema);

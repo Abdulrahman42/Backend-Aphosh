@@ -25,13 +25,14 @@
                         <td><%- bank[i].bankName %></td>
                         <td><%- bank[i].accountNumber %></td>
                         <td>
-                            <img src="http://localhost:3000/<%- bank[i].imageUrl %>" alt="imageUrl" height="50px"
-                                width="100px"> </td>
+                            <img src="http://localhost:3000/<%- bank[i].imageUrl %>" alt="imageUrl" width="70px"> </td>
                         <td>
                             <form action="/admin/bank/<%= bank[i].id%>?_method=DELETE" method="POST">
                                 <a href="javascript:void()" type="button"
-                                    class="btn btn-warning btn-circle btn-sm button-update" data-id="<%= bank[i].id%>"
-                                    data-name="<%= bank[i].name%>"><i class="fas fa-edit"></i></a>
+                                    class="btn btn-warning btn-circle btn-sm button-update"
+                                    data-accountNumber="<%= bank[i].accountNumber %>"
+                                    data-bankName="<%= bank[i].bankName %>" data-id="<%= bank[i].id%>"
+                                    data-name="<%= bank[i].name %>"><i class="fas fa-edit"></i></a>
                                 <button type="submit" class="btn btn-danger  btn-circle btn-sm"><i
                                         class="fas fa-trash"></i></button>
                             </form>

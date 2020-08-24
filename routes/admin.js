@@ -11,7 +11,11 @@ router.delete('/category/:id', adminController.deleteCategory)
 // endPoint Bank
 router.get('/bank', adminController.viewBank)
 router.post('/bank', uploadSingle, adminController.addBank)
+router.put('/bank', uploadSingle, adminController.editBank)
+router.delete('/bank/:id', adminController.deleteBank)
+// endPoint Booking
 router.get('/booking', adminController.viewBooking)
+//endPoint Item
 router.get('/item', adminController.viewItem)
 
 module.exports = router
