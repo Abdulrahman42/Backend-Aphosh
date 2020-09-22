@@ -4,19 +4,19 @@ const { ObjectId } = mongoose.Schema
 const activitySchema = new mongoose.Schema({
   name: {
     type: String,
-    require: true,
+    required: true,
   },
   tyoe: {
     type: String,
-    require: true,
+    required: true,
   },
   imageUrl: {
     type: String,
-    require: true,
+    required: true,
   },
   isPopular: {
     type: Boolean,
-    require: true,
+    required: true,
   },
   itemId: {
     type: ObjectId,

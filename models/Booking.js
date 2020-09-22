@@ -9,22 +9,22 @@ const bookingSchema = new mongoose.Schema({
       _id: {
         type: ObjectId,
         ref: "Item",
-        require: true,
+        required: true,
       },
       price: {
         type: Number,
-        require: true,
+        required: true,
       },
       night: {
         type: number,
-        require: true,
+        required: true,
       },
     },
   ],
   memberId: [
     {
       type: ObjectId,
-      require: true,
+      required: true,
       ref: "Member",
     },
   ],

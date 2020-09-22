@@ -4,11 +4,11 @@ const { ObjectId } = mongoose.Schema;
 const itemsSchema = new mongoose.Schema({
   title: {
     type: String,
-    require: true,
+    required: true,
   },
   price: {
     type: Number,
-    require: true,
+    required: true,
   },
   country: {
     type: String,
@@ -16,26 +16,34 @@ const itemsSchema = new mongoose.Schema({
   },
   city: {
     type: String,
-    require: true,
+    required: true,
   },
   isPopular: {
     type: String,
-    require: true,
+    required: true,
   },
   description: {
     type: String,
-    require: true,
+    required: true,
+  },
+  totalRoom: {
+    type: Number,
+    required: true
   },
   categoryId: {
     type: ObjectId,
-    ref: "Category"
+    ref: "Categories"
   },
   imageId: [
     {
       type: ObjectId,
-      ref: "Image",
+      ref: "Images",
     },
   ],
+  typeId: [{
+    type: ObjectId,
+    ref: "TypeItems"
+  }],
   featured: [
     {
       type: ObjectId,
@@ -48,6 +56,6 @@ const itemsSchema = new mongoose.Schema({
       ref: "Activity",
     },
   ],
-});
+}, { timestamps: true });
 
 module.exports = mongoose.model("Items", itemsSchema);

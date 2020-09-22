@@ -4,12 +4,12 @@ const { ObjectId } = mongoose.Schema
 const categorySchema = new mongoose.Schema({
   name: {
     type: String,
-    require: true,
+    required: true,
   },
-  itemId: {
+  itemId: [{
     type: ObjectId,
-    ref: 'Item'
-  }
-});
+    ref: 'Items'
+  }]
+}, { timestamps: true });
 
 module.exports = mongoose.model("Categories", categorySchema);
